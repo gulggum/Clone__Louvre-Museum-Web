@@ -10,11 +10,16 @@
     <header>
       <div class="header__top">
         <div class="header__left">
+          <i class="fa-solid fa-magnifying-glass"></i>
           <span>Search</span>
           <span>English</span>
+          <i class="fa-solid fa-chevron-down"></i>
         </div>
         <div class="header__title">Louvre</div>
-        <div class="header__right">Tickets</div>
+        <div class="header__right">
+          <span><i class="fa-solid fa-ticket"></i> Ticket</span>
+          
+        </div>
       </div>
       <div class="header__bottom">
         <nav>
@@ -22,21 +27,24 @@
             <li><a href="#">visit</a></li>
             <li><a href="#">exhibitions and events</a></li>
             <li><a href="#">explore </a></li>
-            <li><a href="#">see more</a></li>
+            <li>
+              <div class="seemore">
+                <a href="#">see more
+             <i class="fa-solid fa-bars"></i></a>
+             </div>
+           </li>
           </ul>
         </nav>
       </div>
     </header>
     <div class="imgslide">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROrwCuyVZAattdE4L58qz5lXpfUeTI5iiSVg&s"
-        alt="img"
-      />
+      <img src="https://picsum.photos/2100/700?grayscale" alt="">
+    
     </div>
     <div class="museum__guide">
       <div class="museum__info">
         <span class="title">Welcome to the louvre</span>
-        <span>The museum is open today</span>
+        <span class="sub__title">The museum is open today</span>
         <div class="museum__info__time">
           <span>9:00 AM</span>
           <span>-></span>
@@ -49,14 +57,105 @@
       </div>
     </div>
     <main>
-      <div class="main__grid">
+      <div class="main__column">
         <span class="title">hirights</span>
+        <div class="work__lists-grid">
+        <div class="img1">
+          <img src="https://presse.louvre.fr/wp-content/uploads/2024/02/d25001f019dcfac3839a849108f5840a-1402x573.png" alt="" width="700px" height="500px">
+          <span class="work__title">olympism</span>
+          <span class="work__content">Modern Invention, Ancient Legacy. 24 April – 16 September 2024
+
+Exhibition
+
+</span>
+        </div>
+        <div class="img2">
+           <img src="https://presse.louvre.fr/wp-content/uploads/2024/03/1ca2b727b7ceaf52238bc63fdfe00084-1500x1615.jpg" alt="" width="500px" >
+          <span class="work__title">a new look at jan van eyck</span>
+          <span class="work__content">The Madonna of Chancellor Rolin. 20 March - 17 June 2024</span>
+        </div>
+        <div class="img3">   <img src="https://www.germanopratines.fr/wp-content/uploads/2024/03/The-MET-au-Louvre-1-1030x826.jpg" alt="" width="400px" >
+          <span class="work__title">a new look at jan van eyck</span>
+          <span class="work__content">The Madonna of Chancellor Rolin. 20 March - 17 June 2024</span></div>
+        <div class="img4">   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp8E-XTlMonIRpDxlIT4FrROJDjpj9niA8lA&s" alt="" width="400px" >
+          <span class="work__title">a new look at jan van eyck</span>
+          <span class="work__content">The Madonna of Chancellor Rolin. 20 March - 17 June 2024</span></div>
+        <div class="img5">   <img src="data:image/jpeg;base64,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" alt="" width="500px" >
+          <span class="work__title">a new look at jan van eyck</span>
+          <span class="work__content">The Madonna of Chancellor Rolin. 20 March - 17 June 2024</span></div>
+        </div>
       </div>
-      <div class="main__grid">
+      <div class="main__column">
         <span class="title">louvre +</span>
+        <div class="contents-grid">
+          <div>
+              <img src="https://images.unsplash.com/photo-1718627829230-a3f11114adb5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8" alt="">
+               <div class="content__box">
+            <div class="content__top">
+              <div class="content__top-title">La restauration de l'Arc du Carrousel - Épisode 1 [ENG subtitles]</div>
+                  </div>
+              <div class="content__bottom">
+                <i class="fa-brands fa-youtube fa-lg"></i><span>
+                  VIDEO · 7 min
+                </span></div></div>
+        
+            <div class="videoButton"><i class="fa-solid fa-circle-play fa-2xl"></i></div>
+          </div>
+          <div><img src="https://images.unsplash.com/photo-1718819616289-fa0e80c23978?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8" alt="">
+                        <div class="content__box">
+            <div class="content__top">
+              <div class="content__top-title">Galerie Campana</div>
+                          </div>
+              <div class="content__bottom">
+                <i class="fa-brands fa-youtube fa-lg"></i><span>
+                  VIDEO · 2 min
+                </span></div>
+                </div>
+
+            <div class="videoButton"><i class="fa-solid fa-circle-play fa-2xl"></i></div>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1718813832812-aa9b3e07ead0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <div class="content__box">
+            <div class="content__top">
+              <div class="content__top-title">The Salle des Etats</div>
+                          </div>
+              <div class="content__bottom">
+                <i class="fa-brands fa-youtube fa-lg"></i><span>
+                  VIDEO · 4 min
+                </span></div>          </div>
+
+            <div class="videoButton"><i class="fa-solid fa-circle-play fa-2xl"></i></div>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1718879330878-71e1997960ef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="content__box">
+            <div class="content__top">
+              <div class="content__top-title">La restauration de l'Arc du Carrousel [ENG subtitles]</div>
+                          </div>
+              <div class="content__bottom">
+                <i class="fa-brands fa-youtube fa-lg"></i><span>
+                  VIDEO · 7 min
+                </span></div>
+          </div>
+            <div class="videoButton"><i class="fa-solid fa-circle-play fa-2xl"></i></div>
+          </div>
       </div>
-      <div class="main__grid">
+    </div>
+      <div class="main__column">
         <span class="title">delve into the louvre</span>
+        <div class="delve__container">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+
+
+        </div>
       </div>
     </main>
     <div class="instagram">
@@ -140,5 +239,6 @@
         </div>
       </div>
     </footer>
+    <script src="https://kit.fontawesome.com/73deddf0a6.js" crossorigin="anonymous"></script>
   </body>
 </html>

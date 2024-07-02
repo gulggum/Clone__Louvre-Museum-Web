@@ -1,0 +1,57 @@
+.museum__guide {
+  position: absolute;
+  width: 40%;
+  height: 160px;
+  background-color: #1a1a1a;
+  display: flex;
+  color: white;
+  top: 72%;
+  right: 0%;
+  font-size: 20px;
+  padding: 30px;
+  .museum__info {
+    display: block;
+  }
+  .museum__info:first-child {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: 1px solid $bar_color;
+    width: 50%;
+    .title {
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+    .sub__title {
+      font-size: 18px;
+    }
+  }
+  .museum__info:last-child {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .museum__info__ticket {
+      margin-bottom: 20px;
+    }
+  }
+  .museum__info__ticket,
+  .museum__info__visit {
+    font-size: 15px;
+    background-color: #0a4f51;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+  .museum__info__visit {
+    background-color: white;
+    color: black;
+  }
+}

@@ -1,0 +1,119 @@
+main {
+  .main__column {
+    .title {
+      display: block;
+      font-size: 50px;
+      letter-spacing: 10px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      margin-bottom: 20px;
+    }
+    .work__lists-grid > div {
+      display: flex;
+      flex-direction: column;
+      .work__title {
+        font-size: 30px;
+        padding: 10px 0px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      .work__content {
+        font-size: 20px;
+        padding: 10px 0px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.main__column:first-child {
+  margin-top: -5px;
+  padding: 200px 200px;
+  background-color: white;
+  .work__lists-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "a a b"
+      "c d e";
+    gap: 20px;
+
+    .img1 {
+      grid-area: a;
+    }
+    .img2 {
+      grid-area: b;
+    }
+  }
+}
+
+// louvre +
+.main__column:nth-child(2) {
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding: 90px 200px;
+  width: 100%;
+  .contents-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    position: relative;
+    img {
+      width: 400px;
+    }
+    .content__box {
+      position: absolute;
+      bottom: 2%;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      .content__top {
+        .content__top-title {
+          margin-bottom: 20px;
+          white-space: normal;
+          line-height: 20px;
+        }
+        .content__bottom {
+          display: flex;
+          align-content: center;
+
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .videoButton {
+    position: absolute;
+    top: 45%;
+    margin-left: 190px;
+    i:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+// DELVE INTO THE LOUVRE
+.main__column:nth-child(3) {
+  margin-top: 500px;
+  background-color: black;
+  padding: 100px 200px;
+  .title {
+    color: white;
+    margin-bottom: 100px;
+  }
+  .delve__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 10px;
+    div {
+      width: 400px;
+      height: 300px;
+      background-color: tomato;
+    }
+  }
+}
